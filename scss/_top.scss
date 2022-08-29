@@ -1,0 +1,54 @@
+nav {
+  border-bottom: 1px solid $secondary-color;
+  z-index: 5;
+
+  .nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px 0;
+
+    .logo {
+      align-self: center;
+
+      h1 {
+        font-size: 32px;
+      }
+
+      #last-initial {
+        color: $secondary-color;
+      }
+    }
+
+    ul {
+      display: flex;
+      list-style-type: none;
+    }
+
+    li {
+      padding: 10px 0px 10px 25px;
+    }
+
+    a {
+      color: $primary-color;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+//Javascript added class
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: darken($color: #fff, $amount: 0.9);
+}
+
+@media screen and (min-width: 600px) {
+  .mobile-bar {
+    visibility: hidden;
+  }
+}
